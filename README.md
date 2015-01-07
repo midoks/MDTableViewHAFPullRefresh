@@ -8,10 +8,11 @@ MDTableViewHAFPullRefresh
 	#import "MDTableViewHAFPullRefresh.h"
 ````
 - 申明变量
-
+````
 	MDTableViewHAFPullRefresh *_refreshHAFView;
+````
 - 初始化
-
+````
 	if (!_refreshHAFView) {
         MDTableViewHAFPullRefresh *view = [[MDTableViewHAFPullRefresh alloc] initWithFrame:CGRectMake(0.0f, 0.0f-self.tableView.bounds.size.height, self.tableView.bounds.size.width, self.tableView.bounds.size.height)];
         view.delegate = self;
@@ -19,8 +20,9 @@ MDTableViewHAFPullRefresh
         _refreshHAFView = view;
         [self.tableView addSubview:view];
     }
-
+````
 - 实现代理方法
+````
 	-(void)scrollViewDidScroll:(UIScrollView *)scrollView
 	{
 	    [_refreshHAFView mdRefreshScrollViewDidScroll:scrollView];
@@ -30,8 +32,9 @@ MDTableViewHAFPullRefresh
 	{
 	    [_refreshHAFView mdRefreshScrollViewDidEndDragging:scrollView];
 	}
-
+````
 - 刷新方法Demo
+````	
 	#warning 顶部刷新
 	- (void)mdRefreshTableHeadTriggerRefresh:(MDTableViewHAFPullRefresh *)view
 	{
@@ -55,3 +58,4 @@ MDTableViewHAFPullRefresh
 	{
 	    [_refreshHAFView mdFootOK];
 	}
+````
