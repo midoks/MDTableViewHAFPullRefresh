@@ -1,15 +1,13 @@
 MDTableViewHAFPullRefresh
 =========================
 
-### 说明
+说明
 
-	这是一个iOS的tableview上下拉功能实现。这是很基本的实现,我同样在网上找个很久,并且一一测
-	试,总感觉用起来不舒服。于是,我根据[EGOTableViewPullRefresh](https://github.com/enormego/EGOTableViewPullRefresh),
+	这是一个iOS的tableview上下拉功能实现。这是很基本的实现,我同样在网上找个很久,并且一一测试,总感觉用起来不舒服。
+	于是,我根据[EGOTableViewPullRefresh](https://github.com/enormego/EGOTableViewPullRefresh),
 	这个开源的下拉的功能的思路,再根据自己的测试,实现了tableview的上下拉功能。
 
 	感谢开源。
-
-
 ### 使用步骤
 
 - 引入
